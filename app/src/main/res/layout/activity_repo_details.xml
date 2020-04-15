@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name" />
+
+
+        <TextView
+            android:id="@+id/user_full_name"
+            android:layout_width="214dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_name"
+            tools:text="Full Name" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="serif"
+            android:text="Name:"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/user_name"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Full Name:"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/user_full_name"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="76dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:text="Login: "
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/user_login"
+            app:layout_constraintHorizontal_bias="0.328"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/user_login"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:text="Login Name:"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_full_name" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="86dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:textAlignment="viewStart"
+            android:text="Type: "
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/user_type"
+            app:layout_constraintHorizontal_bias="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/user_type"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Type"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_login" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="114dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Site Admin: "
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/site_admin"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/site_admin"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Site Admin"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_type" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="95dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Fork: "
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/fork"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/fork"
+            android:layout_width="216dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Fork"
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.764"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/site_admin" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="122dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Description: "
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView17"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="211dp"
+            android:layout_height="225dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="serif"
+            android:text="Description: "
+            android:textAlignment="viewStart"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.752"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fork"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
