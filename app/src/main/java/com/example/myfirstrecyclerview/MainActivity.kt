@@ -1,5 +1,8 @@
 package com.example.myfirstrecyclerview
 
+import android.R.anim.slide_in_left
+import android.R.anim.slide_out_right
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -56,5 +59,7 @@ class MainActivity : AppCompatActivity(), onUserItemClickListener {
         intent.putExtra("Fork",users.fork)
         intent.putExtra("Description",users.description)
         startActivity(intent)
+//        overridePendingTransition(slide_in_left, slide_out_left)
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left)
     }
 }
